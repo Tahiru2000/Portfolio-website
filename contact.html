@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio | Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Service</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact" style="background-image: linear-gradient(120deg, rgba(12,25,40,0.9), rgba(50,70,100,0.4)), url('images/bg-contact.jpg'); background-size:cover;">
+      <div class="container contact-grid">
+        <div class="contact-info fade-in">
+          <h2>Contact Info</h2>
+          <p><strong>Phone:</strong> +233 593501415</p>
+          <p><strong>Email:</strong> shaibutahiru2000@gmail.com</p>
+          <p>Or send me a message using the form.</p>
+        </div>
+
+        <div class="contact-form fade-in">
+          <!-- Replace YOUR_FORM_ID with the Formspree form ID before publishing -->
+          <form action=https://formspree.io/f/xeozpnyb method="POST" >
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" placeholder="Your Name" required />
+
+            <label for="email">Email</label>
+            <input id="email" type="email" name="_replyto" placeholder="Your Email" required />
+
+            <label for="country">Country</label>
+            <input id="country" type="text" name="country" placeholder="Your Country" required />
+
+            <label for="address">Address</label>
+            <input id="address" type="text" name="address" placeholder="Your Address" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+            <input type="hidden" name="_redirect" value="thankyou.html" />
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="social-icons">
+        <a href="#" aria-label="facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="linkedin"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>© 2025 Shaibu Tahiru. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
